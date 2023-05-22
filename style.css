@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/* comando para importar font da web */
+/* declaração de variaveis que utilizei mais de uma vez no codigo para simplifica-lo */
+:root{
+    --cor-fundo: black;
+    --cor-secundária: #f6f6f6;
+    --cor-detalhes: #B026ff;
+    --cor-hover:#272727;
+
+    --fonte-titulo: 'Krona One', sans-serif;
+    --fonte-texto:'Montserrat', sans-serif;
+}
+
+*{
+    /* comando utilizado para zerar as configurações padroes que os navegadores apresentam, dessa forma fica mais facil colocar o objeto no local que queremos */
+    margin: 0;
+    padding: 0;
+}
+.cabecalho__menu{
+    padding: 2%;
+}
+.cabecalho__menu__link{
+    padding: 1%;
+    font-family: var(--fonte-texto);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor-secundária);
+}
+body{
+    /* utilizamos o comando box sizing e border box para fazer com que o elemento acompanhe a borda e dessa forma nao sai do espaço delimitado */
+    box-sizing: border-bo;
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundária);
+}
+.titulo-destaque{
+    color: var(--cor-detalhes);
+}
+.apresentacao{
+    padding: 3% 7%;
+    /* a margin quando tem um valor somente é aplicado para os 4 lados, com 2 valores para eixo vertical e depois horizontal, é possivel também colocar para cada lado da margin um valor */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+    /* o justify content diz a forma que o elemento do bloco selecionado se comportará em relação ao outro */
+}
+.apresentacao__sobre{
+    padding: 4% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    /* width diz o tamanho do elemento */
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* o gap é utilizado para determinar o espaçamento entre os elementos do bloco selecionado */
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2,25rem;
+    font-family:  var(--fonte-titulo);
+}
+.apresentacao__conteudo__texto{
+    font-size: 2,25rem;
+    font-family: var(--fonte-texto);
+}
+.apresentacao__links__imagem{
+    width: 20%;
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    /* por padrao o flex direction é horizontal, o comando column redireciona os elementos para vertical */
+}
+.apresentacao__links__texto{
+    font-family:  var(--fonte-titulo);
+    font-size: 1,25rem;
+}
+.apresentacao__links__link{
+    /* background-color: #B026ff; */
+    /* ctrl k c para comentar */
+    border: 2px solid var(--cor-detalhes);
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1,25rem;
+    padding: 20px 0;
+    text-decoration: none;
+    /* text-decoration none retira toda a estilizaçao padrao do texto, nesse caso o sublinhado de um link */
+    color: var(--cor-secundária);
+    font-family: var(--fonte-texto);
+    font-weight: bold;
+}
+.apresentacao__links__link:hover{
+    background-color: var(--cor-hover);
+}
+.rodape{
+    padding: 20px;
+    background-color: var(--cor-detalhes);
+    color: var(--cor-fundo);
+    text-align: center;
+    font-family: var(--fonte-texto)
+}
+@media(max-width:1200px){
+    .cabecalho__menu{
+        padding: 6%;
+        display: flex;
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}

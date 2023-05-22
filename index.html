@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fã BTS</title>
+        <link rel="stylesheet" href="style.css"> 
+        <!-- o link a cima é utilizado para chamar o outro codigo em css para que ele estilise a pagina -->
+    </head>
+    <body>
+        <header class="cabecalho">
+            <nav class="cabecalho__menu">
+                <a class="cabecalho__menu__link" href="index.html">Home</a>
+                <a class="cabecalho__menu__link" href="about.html">Sobre</a>
+            </nav>
+        </header>
+        <main class="apresentacao"> 
+        <!-- a main é criada para colocar todo o conteudo que ficara dentro da pagina, é uma forma de tornar mais organizado -->
+        <!-- as classes sao criadas para facilitar a identificação e escrita no CSS, classes de dentro seguem o padrao de fora para ficar mais facil identificar onde pertencem -->
+        <!-- colocar no CSS os comandos tambem na ordem que as classes aparecem no html para melhor organização -->
+            <section class="apresentacao__conteudo">
+            <!-- section significa um bloco de conteudo que a pagina terá, é possivel ter mais de uma section por main -->
+                <h1 class="apresentacao__conteudo__titulo">O melhor grupo de K-pop do mundo, simplesmente <strong class="titulo-destaque">BTS!</strong> </h1>
+                <!-- o strong da um destaque para o texto -->
+                <p class="apresentacao__conteudo__texto">
+                    BTS, an acronym of Bangtan Sonyeondan or “Beyond the Scene,” is a Grammy-nominated South Korean group that has been capturing the hearts of millions of fans globally since its debut in June 2013.
+                </p>
+                <div class="apresentacao__links">
+                <!-- a div é criada simplesmente para agrupar os "botoes" por isso é utilizada a classificação generica -->
+                    <h2 class="apresentacao__links__texto">Redes: </h2>
+                    <a class="apresentacao__links__link" href="https://www.instagram.com/bts.bighitofficial/">Instagram</a>
+                    <a class="apresentacao__links__link" href="https://ibighit.com/bts/eng/">Site</a>
+                    <a class="apresentacao__links__link" href="https://twitter.com/bts_bighit">Twitter</a>
+                    <!-- a ferramenta "a" é utilizada para acrescentar links ao conteudo porem para realmente ao clicar levar ao link é necessário colocar o href e a url -->
+                </div>
+            </section>
+            <img class="apresentacao__links__imagem" src="/image/bts2.jpg" alt="BTS" class="apresentacao__imagem">
+        </main>
+        <footer class="rodape">
+            <p>Desenvolvido por Larissa</p>
+        </footer>
+    </body>
+</html>
